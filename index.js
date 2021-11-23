@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
-    timeTxt.innerHTML = hours + ":" + minutes + ":" + seconds;
+    timeTxt.innerHTML = `
+    ${hours}:${minutes}:${seconds}
+    `;
   }, 1);
 
   // Set date
@@ -42,12 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
   ];
 
-  dateTxt.innerHTML =
-    daysMonths[date.getDay()] +
-    " " +
-    date.getDate() +
-    " " +
-    daysMonths[7][date.getMonth()] +
-    " " +
-    date.getFullYear();
+  dateTxt.innerHTML = ` 
+  ${daysMonths[date.getDay()]} ${date.getDate()} ${
+    daysMonths[7][date.getMonth()]
+  } ${date.getFullYear()}
+  `;
 });
