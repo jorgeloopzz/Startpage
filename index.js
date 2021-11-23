@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "April",
       "May",
       "June",
+      "July",
       "August",
       "September",
       "October",
