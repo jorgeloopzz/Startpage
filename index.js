@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
     timeTxt.innerHTML = `
-    ${hours}:${minutes}:${seconds}
+    ${hours} : ${minutes} : ${seconds}
     `;
   }, 1);
 
