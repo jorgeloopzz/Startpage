@@ -202,7 +202,7 @@
         </div>
       </div>
       <!-- Brave search engine -->
-      <div class="row text-white text-center p-5">
+      <div class="row text-center p-5">
         <a href="https://search.brave.com/" style="text-decoration: none">
           <img src="img/Brave-logo-monotone-reversed.png" width="200px" />
         </a>
@@ -212,27 +212,24 @@
 
   <!-- JS Code -->
   <script>
-    
     // Function to set time
     const timeTxt = document.getElementById("time");
     setInterval(() => {
       let date = new Date();
       let hours = date.getHours();
+      // Add a 0 to make it cleaner
+      if (hours < 10) hours = `0${hours}`;
       let minutes = date.getMinutes();
+      // Add a 0 to make it cleaner
+      if (minutes < 10) minutes = `0${minutes}`;
       let seconds = date.getSeconds();
       // Add a 0 to make it cleaner
-      if (hours < 10) {
-        hours = "0" + date.getHours();
-      } else if (minutes < 10) {
-        minutes = "0" + date.getMinutes();
-      } else if (seconds < 10) {
-        seconds = "0" + date.getSeconds();
-      }
+      if (seconds < 10) `0${seconds}`;
       timeTxt.innerHTML = `
       ${hours} : ${minutes} : ${seconds}
       `;
     }, 1);
-    
+
     // Set date
     const dateTxt = document.getElementById("date");
     const date = new Date();
