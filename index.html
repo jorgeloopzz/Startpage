@@ -212,10 +212,9 @@
 
   <!-- JS Code -->
   <script>
-    const timeTxt = document.getElementById("time");
-    const dateTxt = document.getElementById("date");
-
+    
     // Function to set time
+    const timeTxt = document.getElementById("time");
     setInterval(() => {
       let date = new Date();
       let hours = date.getHours();
@@ -233,8 +232,9 @@
       ${hours} : ${minutes} : ${seconds}
       `;
     }, 1);
-
+    
     // Set date
+    const dateTxt = document.getElementById("date");
     const date = new Date();
 
     // Make arrays to set days and months in text
