@@ -224,7 +224,7 @@
       if (minutes < 10) minutes = `0${minutes}`;
       let seconds = date.getSeconds();
       // Add a 0 to make it cleaner
-      if (seconds < 10) `0${seconds}`;
+      if (seconds < 10) seconds = `0${seconds}`;
       timeTxt.innerHTML = `
       ${hours} : ${minutes} : ${seconds}
       `;
