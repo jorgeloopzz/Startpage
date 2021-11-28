@@ -19,28 +19,35 @@
     />
     <!-- CSS code -->
     <link rel="stylesheet" href="index.css" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <div class="container">
       <!-- Greeting -->
-      <h1 class="d-flex justify-content-center text-light"></h1>
+      <h1 class="text-center text-light"></h1>
 
       <!-- Time -->
-      <h1
-        class="d-flex justify-content-center text-light display-2"
-        id="time"
-      ></h1>
+      <h1 class="text-center text-light display-2" id="time"></h1>
 
       <!-- Date -->
-      <h5 class="d-flex justify-content-center text-light" id="date"></h5>
+      <h5 class="text-center text-light" id="date"></h5>
+      <!-- Brave search engine -->
+      <div class="row">
+        <form
+          action="https://search.brave.com/search"
+          method="get"
+          class="d-flex display-6"
+        >
+          <!-- <i class="fas fa-search text-light pt-3 pl-3 pb-3" ></i> -->
+          <input
+            class="container-fluid p-2 text-center"
+            type="Search"
+            name="q"
+            placeholder="Search with Brave"
+            autocomplete="off"
+          />
+        </form>
+      </div>
     </div>
 
     <!-- Entertainment -->
