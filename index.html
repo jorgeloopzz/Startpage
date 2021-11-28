@@ -37,9 +37,7 @@
       <h1
         class="d-flex justify-content-center text-light"
         style="font-family: serif; font-style: oblique"
-      >
-        Si
-      </h1>
+      ></h1>
 
       <!-- Time -->
       <h1
@@ -209,12 +207,6 @@
           </div>
         </div>
       </div>
-      <!-- Brave search engine -->
-      <div class="row text-center p-5">
-        <a href="https://search.brave.com/" style="text-decoration: none">
-          <img src="img/Brave-logo-monotone-reversed.png" width="200px" />
-        </a>
-      </div>
     </div>
   </body>
 
@@ -224,7 +216,7 @@
     const greeting = document.querySelector("h1");
     const time = new Date().getHours();
     function inRange(number, min, max) {
-      return number, min, max;
+      return number >= min && number <= max;
     }
     if (inRange(time, 0, 6))
       greeting.innerHTML = "It's too late, take some sleep";
