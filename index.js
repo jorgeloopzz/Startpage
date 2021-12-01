@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     greeting.innerHTML = "It's too late, take some sleep";
   if (inRange(time, 6, 9)) greeting.innerHTML = "Good morning :)";
   if (inRange(time, 9, 12)) greeting.innerHTML = "Have a good day";
-  if (inRange(time, 12, 15))
-    greeting.innerHTML = "Hi there!";
+  if (inRange(time, 12, 15)) greeting.innerHTML = "Hi there!";
   if (inRange(time, 15, 18)) greeting.innerHTML = "Good afternoon";
   if (inRange(time, 18, 20)) greeting.innerHTML = "Good evening";
-  if (inRange(time, 20, 23)) greeting.innerHTML = "I hope you've had a fantastic day";
+  if (inRange(time, 20, 23))
+    greeting.innerHTML = "I hope you've had a fantastic day";
 
   // Function to set time
   const timeTxt = document.getElementById("time");
@@ -69,4 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
     daysMonths[7][date.getMonth()]
   } ${date.getFullYear()}
     `;
+
+  // Search engine function
+  const searchBox = document.querySelector("input");
+  searchBox.addEventListener("keydown", (e) => {
+    if (e.code == "Enter" && searchBox.value != "") {
+      window.open(`https://search.brave.com/search?q=${searchBox.value}`);
+    } else {
+      return 0;
+    }
+  });
 });
