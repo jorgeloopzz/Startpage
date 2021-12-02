@@ -26,6 +26,54 @@ input {
   color: #ffffff;
 }
 
-/* a {
-  text-decoration: none;
-} */
+/* ----------------------------------------------------------------- */
+/* Style at hover */
+/* ----------------------------------------------------------------- */
+
+/* Entertainment */
+i {
+  transition: color 500ms;
+}
+
+#yt-icon:hover {
+  color: #ff0000;
+}
+
+#rd-icon:hover {
+  color: #ff4301;
+}
+
+#spoti-icon:hover {
+  color: #1db954;
+}
+
+#netflix-icon:hover {
+  color: #e50914;
+}
+
+/* Code */
+#sto-icon:hover {
+  color: #FF9900;
+}
+
+#github-icon:hover {
+  color: #333;
+}
+
+#w3-icon:hover {
+  color: #04AA6D;
+}
+
+#linux-icon:hover {
+  color: #3a3d3f;
+}
+
+/* Gmail color */
+#gmail-icon:hover {
+  color: #67a1ff;
+}
+
+/* Study color */
+#study-icon:hover {
+  color: #F4B400;
+}
