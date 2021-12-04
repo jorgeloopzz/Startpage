@@ -30,50 +30,49 @@ input {
 /* Style at hover */
 /* ----------------------------------------------------------------- */
 
-/* Entertainment */
 i {
   transition: color 500ms;
 }
-
-#yt-icon:hover {
+/* Entertainment */
+a#yt:hover #yt-icon {
   color: #ff0000;
 }
 
-#rd-icon:hover {
+a#rd:hover #rd-icon {
   color: #ff4301;
 }
 
-#spoti-icon:hover {
+a#spoti:hover #spoti-icon {
   color: #1db954;
 }
 
-#netflix-icon:hover {
+a#netflix:hover #netflix-icon {
   color: #e50914;
 }
 
 /* Code */
-#sto-icon:hover {
-  color: #FF9900;
+a#sto:hover #sto-icon {
+  color: #ff9900;
 }
 
-#github-icon:hover {
+a#github:hover #github-icon {
   color: #333;
 }
 
-#w3-icon:hover {
-  color: #04AA6D;
+a#w3:hover #w3-icon {
+  color: #04aa6d;
 }
 
-#linux-icon:hover {
+a#linux:hover #linux-icon {
   color: #3a3d3f;
 }
 
 /* Gmail color */
-#gmail-icon:hover {
+a#gmail:hover #gmail-icon {
   color: #67a1ff;
 }
 
 /* Study color */
-#study-icon:hover {
-  color: #F4B400;
+a#study:hover #study-icon {
+  color: #f4b400;
 }
