@@ -19,18 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const timeTxt = document.getElementById("time");
   setInterval(() => {
     let date = new Date();
-    let hours = date.getHours();
-    // Add a 0 to make it looks cleaner
-    if (hours < 10) hours = `0${hours}`;
-    let minutes = date.getMinutes();
-    // Add a 0 to make it looks cleaner
-    if (minutes < 10) minutes = `0${minutes}`;
-    let seconds = date.getSeconds();
-    // Add a 0 to make it looks cleaner
-    if (seconds < 10) seconds = `0${seconds}`;
-    timeTxt.innerHTML = `
-      ${hours}:${minutes}:${seconds}
-      `;
+    timeTxt.innerHTML = date.toLocaleTimeString();
   }, 1);
 
   // Set date
