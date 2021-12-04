@@ -38,6 +38,10 @@ a#yt:hover #yt-icon {
   color: #ff0000;
 }
 
+a#tw:hover #tw-icon {
+  color: #1DA1F2;
+}
+
 a#rd:hover #rd-icon {
   color: #ff4301;
 }
