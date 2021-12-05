@@ -39,7 +39,7 @@ a#yt:hover #yt-icon {
 }
 
 a#tw:hover #tw-icon {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 a#rd:hover #rd-icon {
@@ -69,6 +69,10 @@ a#w3:hover #w3-icon {
 
 a#linux:hover #linux-icon {
   color: #3a3d3f;
+}
+
+a#git:hover #git-icon {
+  color: #f1502f;
 }
 
 /* Gmail color */
