@@ -68,4 +68,18 @@ document.addEventListener("DOMContentLoaded", () => {
       return 0;
     }
   });
+
+  // Extensions stores depending on the browsers
+  const link = document.getElementById("extensions-link");
+  const browser = navigator.userAgent; // Detect the user's browser
+  if (browser.indexOf("Chrome") != -1) {
+    link.setAttribute(
+      "href",
+      "https://chrome.google.com/webstore/category/extensions"
+    );
+  } else if (browser.indexOf("Opera") != -1 || browser.indexOf("OPR") != -1) {
+    link.setAttribute("href", "https://addons.opera.com/en/extensions/");
+  } else if (browser.indexOf("Firefox") != -1) {
+    link.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/");
+  }
 });
