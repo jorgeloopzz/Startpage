@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const date = new Date();
 
   // Make arrays to set days and months in text
-  const daysMonths = [
-    // Days
+  const days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -36,26 +35,25 @@ document.addEventListener("DOMContentLoaded", () => {
     "Thursday",
     "Friday",
     "Saturday",
-    // Months
-    [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ],
+  ];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   dateTxt.innerHTML = `
-    ${daysMonths[date.getDay()]} ${date.getDate()} ${
-    daysMonths[7][date.getMonth()]
+    ${days[date.getDay()]} ${date.getDate()} ${
+    months[date.getMonth()]
   } ${date.getFullYear()}
     `;
 
