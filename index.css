@@ -86,9 +86,13 @@ a#linux:hover #linux-icon {
   color: #1793d1;
 }
 
-/* Gmail color */
+/* Personal */
 a#gmail:hover #gmail-icon {
   color: #67a1ff;
+}
+
+a#adobe-sign:hover #adobe-icon {
+  color: #ff0000;
 }
 
 /* Study color */
