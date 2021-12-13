@@ -74,16 +74,16 @@ a#github:hover #github-icon {
   color: #333;
 }
 
+a#git:hover #git-icon {
+  color: #f1502f;
+}
+
 a#w3:hover #w3-icon {
   color: #04aa6d;
 }
 
 a#linux:hover #linux-icon {
-  color: #3a3d3f;
-}
-
-a#git:hover #git-icon {
-  color: #f1502f;
+  color: #1793d1;
 }
 
 /* Gmail color */
