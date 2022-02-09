@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     let date = new Date();
     timeTxt.innerHTML = date.toLocaleTimeString();
-  }, 1);
+  }, 1000);
 
   // Set date
   const dateTxt = document.getElementById("date");
