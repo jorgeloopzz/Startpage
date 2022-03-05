@@ -26,6 +26,10 @@ input {
   color: #ffffff;
 }
 
+button {
+  background: transparent;
+}
+
 /* ----------------------------------------------------------------- */
 /* Puzzle icon style */
 /* ----------------------------------------------------------------- */
@@ -42,8 +46,10 @@ a {
 }
 
 i {
+  color: #ffffff;
   transition: color 500ms;
 }
+
 /* Entertainment */
 a#yt:hover #yt-icon {
   color: #ff0000;
