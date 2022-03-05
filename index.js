@@ -67,6 +67,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Remove search
+  const removeSearch = document.getElementById("removeBtn");
+  removeSearch.onclick = () => {
+    searchBox.value = "";
+    searchBox.focus();
+  };
+
   // Extensions stores depending on the browsers
   const link = document.getElementById("extensions-link");
   const browser = navigator.userAgent; // Detect the user's browser
