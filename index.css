@@ -31,84 +31,8 @@ button {
 }
 
 /* ----------------------------------------------------------------- */
-/* Puzzle icon style */
-/* ----------------------------------------------------------------- */
-
-a#extensions-link:hover .fa-puzzle-piece {
-  color: #ffffff;
-}
-
-/* ----------------------------------------------------------------- */
 /* Dropdown menu */
 /* ----------------------------------------------------------------- */
 .dropdown:hover .dropdown-menu {
   display: grid;
-}
-
-/* ----------------------------------------------------------------- */
-/* Style at hover */
-/* ----------------------------------------------------------------- */
-a {
-  color: #ffffff;
-}
-
-i {
-  color: #ffffff;
-  transition: color 500ms;
-}
-
-/* Entertainment */
-a#yt:hover #yt-icon {
-  color: #ff0000;
-}
-
-a#tw:hover #tw-icon {
-  color: #1da1f2;
-}
-
-a#rd:hover #rd-icon {
-  color: #ff4301;
-}
-
-a#netflix:hover #netflix-icon {
-  color: #e50914;
-}
-
-/* Code */
-a#sto:hover #sto-icon {
-  color: #ff9900;
-}
-
-a#github:hover #github-icon {
-  color: #333;
-}
-
-a#git:hover #git-icon {
-  color: #f1502f;
-}
-
-a#w3:hover #w3-icon {
-  color: #04aa6d;
-}
-
-a#linux:hover #linux-icon {
-  color: #1793d1;
-}
-
-/* Personal */
-a#gmail:hover #gmail-icon {
-  color: #67a1ff;
-}
-
-a#adobe-sign:hover #adobe-icon {
-  color: #ff0000;
-}
-
-/* Study color */
-a#study:hover #study-icon {
-  color: #f4b400;
-}
-
-a#school:hover #school-icon {
-  color: #f4b400;
 }
