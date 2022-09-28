@@ -57,6 +57,30 @@ document.addEventListener("DOMContentLoaded", () => {
   } ${date.getFullYear()}
     `;
 
+  // Choose search engine
+  const engines = document.querySelectorAll(".dropdown-item");
+  const icons = document.getElementById("search-icon");
+  const input = document.getElementsByTagName("input");
+  let url;
+
+  const google = {
+    name: "Google",
+    url: "https://www.google.com/search?q=",
+    icon: "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-512.png",
+  };
+
+  const duckduckgo = {
+    name: "Duckduckgo",
+    url: "https://duckduckgo.com/?va=j&t=hc&q=",
+    icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-512.png",
+  };
+
+  const brave = {
+    name: "Brave",
+    url: "https://search.brave.com/search?q=",
+    icon: "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/brave-icon.png",
+  };
+
   // Search engine function
   const searchBox = document.querySelector("input");
   searchBox.addEventListener("keydown", (e) => {
