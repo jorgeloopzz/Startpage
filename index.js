@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Choose search engine
   const engines = document.querySelectorAll(".dropdown-item");
   const icons = document.getElementById("search-icon");
-  const input = document.getElementsByTagName("input");
+  const searchBox = document.querySelector("input");
   let url;
 
   const google = {
@@ -84,23 +84,25 @@ document.addEventListener("DOMContentLoaded", () => {
   engines[0].addEventListener("click", () => {
     url = google.url;
     icons.setAttribute("src", google.icon);
-    input[0].setAttribute("placeholder", `Search with ${google.name}`);
+    searchBox.setAttribute("placeholder", `Search with ${google.name}`);
+    searchBox.focus(); 
   });
 
   engines[1].addEventListener("click", () => {
     url = duckduckgo.url;
     icons.setAttribute("src", duckduckgo.icon);
-    input[0].setAttribute("placeholder", `Search with ${duckduckgo.name}`);
+    searchBox.setAttribute("placeholder", `Search with ${duckduckgo.name}`);
+    searchBox.focus(); 
   });
 
   engines[2].addEventListener("click", () => {
     url = brave.url;
     icons.setAttribute("src", brave.icon);
-    input[0].setAttribute("placeholder", `Search with ${brave.name}`);
+    searchBox.setAttribute("placeholder", `Search with ${brave.name}`);
+    searchBox.focus(); 
   });
 
   // Search engine function
-  const searchBox = document.querySelector("input");
   searchBox.addEventListener("keydown", (e) => {
     if (e.code == "Enter" && searchBox.value != "") {
       window.open(`${url}${searchBox.value}`);
