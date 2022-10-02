@@ -81,11 +81,26 @@ document.addEventListener("DOMContentLoaded", () => {
     icon: "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/brave-icon.png",
   };
 
+  engines[0].addEventListener("click", () => {
+    url = google.url;
+    icons.setAttribute("src", google.icon);
+  })
+
+  engines[1].addEventListener("click", () => {
+    url = duckduckgo.url;
+    icons.setAttribute("src", duckduckgo.icon);
+  })
+
+  engines[2].addEventListener("click", () => {
+    url = brave.url;
+    icons.setAttribute("src", brave.icon);
+  })
+
   // Search engine function
   const searchBox = document.querySelector("input");
   searchBox.addEventListener("keydown", (e) => {
     if (e.code == "Enter" && searchBox.value != "") {
-      window.open(`https://search.brave.com/search?q=${searchBox.value}`);
+      window.open(`${url}${searchBox.value}`);
     } else {
       return 0;
     }
