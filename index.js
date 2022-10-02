@@ -84,17 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
   engines[0].addEventListener("click", () => {
     url = google.url;
     icons.setAttribute("src", google.icon);
-  })
+    input[0].setAttribute("placeholder", `Search with ${google.name}`);
+  });
 
   engines[1].addEventListener("click", () => {
     url = duckduckgo.url;
     icons.setAttribute("src", duckduckgo.icon);
-  })
+    input[0].setAttribute("placeholder", `Search with ${duckduckgo.name}`);
+  });
 
   engines[2].addEventListener("click", () => {
     url = brave.url;
     icons.setAttribute("src", brave.icon);
-  })
+    input[0].setAttribute("placeholder", `Search with ${brave.name}`);
+  });
 
   // Search engine function
   const searchBox = document.querySelector("input");
