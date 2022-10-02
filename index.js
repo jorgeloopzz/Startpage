@@ -128,5 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.setAttribute("href", "https://addons.opera.com/en/extensions/");
   } else if (browser.indexOf("Firefox") != -1) {
     link.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/");
+  } else if (browser.indexOf("Edge") != -1) {
+    link.setAttribute("href", "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home");
   }
 });
