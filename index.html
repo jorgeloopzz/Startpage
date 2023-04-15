@@ -1,246 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/icon-home.png" />
-    <!-- Icons -->
-    <link href="https://www.iconfinder.com/" />
-    <title>Homepage</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- CSS code -->
-    <link rel="stylesheet" href="index.css" />
-    <!-- JS Code -->
-    <script src="index.js"></script>
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg p-2 text-light">
-      <a class="navbar-brand" id="extensions-link" target="_blank">
-        <img
-          src="https://cdn4.iconfinder.com/data/icons/unigrid-phantom-basic-vol-1/60/019_050_plugin_extension_plug_in_addon_component_2-256.png"
-          width="40"
-        />
-      </a>
-    </nav>
-    <div class="container">
-      <!-- Greeting -->
-      <h1 class="text-center text-light"></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/icon-home.png" />
+  <title>Homepage</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS code -->
+  <link rel="stylesheet" href="index.css" />
+  <!-- JS Code -->
+  <script src="index.js"></script>
+</head>
 
-      <!-- Time -->
-      <h1 class="text-center text-light display-2" id="time"></h1>
+<body>
+  <nav class="navbar navbar-expand-lg p-2 text-light">
+    <a class="navbar-brand" id="extensions-link" target="_blank">
+      <img
+        src="https://cdn4.iconfinder.com/data/icons/unigrid-phantom-basic-vol-1/60/019_050_plugin_extension_plug_in_addon_component_2-256.png"
+        width="40" />
+    </a>
+  </nav>
+  <div class="container">
+    <!-- Greeting -->
+    <h1 class="text-center text-light"></h1>
 
-      <!-- Date -->
-      <h5 class="text-center text-light" id="date"></h5>
+    <!-- Time -->
+    <h1 class="text-center text-light display-2" id="time"></h1>
 
-      <!-- Brave search engine -->
-      <div class="row">
-        <div class="dropdown col-1 d-inline-flex">
-          <button
-            class="btn btn-secondary dropdown-toggle bg-transparent border-0"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img
-              id="search-icon"
-              src="https://cdn4.iconfinder.com/data/icons/set-1/32/__70-256.png"
-              width="40"
-            />
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <button class="dropdown-item">Google</button>
-            <button class="dropdown-item">DuckDuckGo</button>
-            <button class="dropdown-item">Brave</button>
-          </div>
-        </div>
+    <!-- Date -->
+    <h5 class="text-center text-light" id="date"></h5>
 
-        <input
-          class="fixed-width col-10 p-2 text-center display-6"
-          type="Search"
-          name="q"
-          placeholder="Choose a search engine"
-          autocomplete="off"
-        />
-
-        <button class="col-1 border-0 display-6" id="removeBtn">
-          <img
-            src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/19-256.png"
-            width="40"
-          />
+    <!-- Brave search engine -->
+    <div class="row">
+      <div class="dropdown col-1 d-inline-flex">
+        <button class="btn btn-secondary dropdown-toggle bg-transparent border-0" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img id="search-icon" src="https://cdn4.iconfinder.com/data/icons/set-1/32/__70-256.png" width="40" />
         </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <button class="dropdown-item">Google</button>
+          <button class="dropdown-item">DuckDuckGo</button>
+          <button class="dropdown-item">Brave</button>
+        </div>
       </div>
+
+      <input class="fixed-width col-10 p-2 text-center display-6" type="Search" name="q"
+        placeholder="Choose a search engine" autocomplete="off" />
+
+      <button class="col-1 border-0 display-6" id="removeBtn">
+        <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/19-256.png" width="40" />
+      </button>
     </div>
+  </div>
 
-    <div class="container p-3 border-top border-white">
-      <div class="row">
-        <!-- Fun -->
-        <div class="col list-group text-center">
-          <h1 class="text-white text-center border-bottom border-white">
-            Fun
-          </h1>
-          <div class="list-group display-3">
-            <a href="https://www.youtube.com/" target="_blank">
-              <img
-                src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Youtube-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://odysee.com/" target="_blank">
-              <img
-                src="https://www.saashub.com/images/app/service_logos/163/z042hia72wrf/large.png?1606527615"
-                width="80"
-              />
-            </a>
-            <a href="https://www.reddit.com/" target="_blank">
-              <img
-                src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Reddit-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-              <img
-                src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-512.png"
-                width="80"
-              />
-            </a>
-	    <a href="https://web.whatsapp.com/" target="_blank">
-              <img
-                src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-256.png"
-                width="80"
-              />
-            </a>
-
-          </div>
+  <div class="container p-3 border-top border-white">
+    <div class="row">
+      <!-- Work -->
+      <div class="col list-group text-center">
+        <h1 class="text-white text-center border-bottom border-white">
+          Work
+        </h1>
+        <div class="list-group display-3">
+          <a href="https://mail.google.com/mail/u/0/?hl=es#inbox" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-512.png"
+              width="80" />
+          </a>
+          <a href="https://calendar.google.com/calendar/u/0/r" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/google_calendar_new_logo-256.png"
+              width="80" />
+          </a>
+          <a href="https://drive.google.com/drive/my-drive" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-drive-256.png"
+            width="80" />
+          </a>
+          <a href="https://docs.google.com/document/u/0/" target="_blank">
+            <img src="https://logos-marques.com/wp-content/uploads/2021/03/Google-Docs-Logo.png"
+              width="120" />
+          </a>
+          <a href="https://docs.google.com/spreadsheets/u/0/" target="_blank">
+            <img src="https://img.icons8.com/fluency/256/google-sheets.png"
+              width="80" />
+          </a>
+          <a href="https://mail.protonmail.com/u/1/inbox" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/aami-flat-emails/64/email-41-256.png" width="80" />
+          </a>
         </div>
+      </div>
 
-        <!-- Tools -->
-        <div class="col list-group text-center">
-          <h1 class="text-white text-center border-bottom border-white">
-            Tools
-          </h1>
-          <div class="list-group display-3">
-            <a href="https://www.ilovepdf.com/" target="_blank">
-              <img
-                src="https://cdn0.iconfinder.com/data/icons/leto-file-formats/64/pdf_adobe_file_format-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://espacioapk.com/" target="_blank">
-              <img
-                src="https://cdn0.iconfinder.com/data/icons/file-management-system-flat/32/file_managemenr_system_icon_set_flat_style-14-512.png"
-                width="80"
-              />
-            </a>
-            <a href="https://www.deepl.com/translator" target="_blank">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/education-and-science-13/32/education_translator_translate_language-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://wiki.archlinux.org/" target="_blank">
-              <img
-                src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_linux-256.png"
-                width="80"
-              />
-            </a>
-          </div>
+      <!-- Fun -->
+      <div class="col list-group text-center">
+        <h1 class="text-white text-center border-bottom border-white">
+          Fun
+        </h1>
+        <div class="list-group display-3">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Youtube-256.png" width="80" />
+          </a>
+          <a href="https://odysee.com/" target="_blank">
+            <img src="https://www.saashub.com/images/app/service_logos/163/z042hia72wrf/large.png?1606527615"
+              width="80" />
+          </a>
+          <a href="https://www.reddit.com/" target="_blank">
+            <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Reddit-256.png" width="80" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-512.png"
+              width="80" />
+          </a>
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-256.png" width="80" />
+          </a>
         </div>
+      </div>
 
-        <!-- Code -->
-        <div class="col list-group text-center">
-          <h1 class="text-white text-center border-bottom border-white">
-            Code
-          </h1>
-          <div class="list-group display-3">
-            <a href="https://stackoverflow.com/" target="_blank">
-              <img
-                src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/stackoverflow-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://github.com/" target="_blank">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-3/24/github-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://www.w3schools.com/" target="_blank">
-              <img
-                src="https://cdn0.iconfinder.com/data/icons/seo-web-4-1/128/Vigor_Laptop-Web_Design-Web_development-Coding-256.png"
-                width="80"
-              />
-            </a>
-          </div>
+      <!-- Tools -->
+      <div class="col list-group text-center">
+        <h1 class="text-white text-center border-bottom border-white">
+          Tools
+        </h1>
+        <div class="list-group display-3">
+          <a href="https://www.ilovepdf.com/" target="_blank">
+            <img src="https://cdn0.iconfinder.com/data/icons/leto-file-formats/64/pdf_adobe_file_format-256.png"
+              width="80" />
+          </a>
+          <a href="https://espacioapk.com/" target="_blank">
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/file-management-system-flat/32/file_managemenr_system_icon_set_flat_style-14-512.png"
+              width="80" />
+          </a>
+          <a href="https://www.deepl.com/translator" target="_blank">
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/education-and-science-13/32/education_translator_translate_language-256.png"
+              width="80" />
+          </a>
+          <a href="https://wiki.archlinux.org/" target="_blank">
+            <img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_linux-256.png"
+              width="80" />
+          </a>
         </div>
+      </div>
 
-        <!-- Work -->
-        <div class="col list-group text-center">
-          <h1 class="text-white text-center border-bottom border-white">
-            Work
-          </h1>
-          <div class="list-group display-3">
-            <a
-              href="https://mail.google.com/mail/u/0/?hl=es#inbox"
-              target="_blank"
-            >
-              <img
-                src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-gmail-512.png"
-                width="80"
-              />
-            </a>
-            <a
-              href="https://calendar.google.com/calendar/u/0/r"
-              target="_blank"
-            >
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/google_calendar_new_logo-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://drive.google.com/drive/my-drive" target="_blank">
-              <img
-                src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-drive-256.png"
-                width="80"
-              />
-            </a>
-	    <a href="https://mail.protonmail.com/u/1/inbox" target="_blank">
-              <img
-                src="https://cdn1.iconfinder.com/data/icons/aami-flat-emails/64/email-41-256.png"
-                width="80"
-              />
-            </a>
-          </div>
+      <!-- Code -->
+      <div class="col list-group text-center">
+        <h1 class="text-white text-center border-bottom border-white">
+          Code
+        </h1>
+        <div class="list-group display-3">
+          <a href="https://stackoverflow.com/" target="_blank">
+            <img src="https://cdn2.iconfinder.com/data/icons/social-icons-color/512/stackoverflow-256.png" width="80" />
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/unicons-line-vol-3/24/github-256.png" width="80" />
+          </a>
+          <a href="https://www.w3schools.com/" target="_blank">
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/seo-web-4-1/128/Vigor_Laptop-Web_Design-Web_development-Coding-256.png"
+              width="80" />
+          </a>
         </div>
-        <!-- Study -->
-        <div class="col list-group text-center">
-          <h1 class="text-white text-center border-bottom border-white">
-            ULPGC
-          </h1>
-          <div class="list-group display-3">
-            <a href="https://www.ulpgc.es/" target="_blank">
-              <img
-                src="https://cdn2.iconfinder.com/data/icons/leto-blue-school-education/64/__hat_student_education_university-256.png"
-                width="80"
-              />
-            </a>
-            <a href="https://eite.ulpgc.es/index.php/es/" target="_blank">
-              <img
-                src="https://cdn3.iconfinder.com/data/icons/flat-education-1/256/School_Building-256.png"
-                width="80"
-              />
-            </a>
-          </div>
+      </div>
+
+
+
+      <!-- Study -->
+      <div class="col list-group text-center">
+        <h1 class="text-white text-center border-bottom border-white">
+          ULPGC
+        </h1>
+        <div class="list-group display-3">
+          <a href="https://www.ulpgc.es/" target="_blank">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/leto-blue-school-education/64/__hat_student_education_university-256.png"
+              width="80" />
+          </a>
+          <a href="https://eite.ulpgc.es/index.php/es/" target="_blank">
+            <img src="https://cdn3.iconfinder.com/data/icons/flat-education-1/256/School_Building-256.png" width="80" />
+          </a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
