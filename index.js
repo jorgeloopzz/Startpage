@@ -61,45 +61,36 @@ document.addEventListener("DOMContentLoaded", () => {
   const engines = document.querySelectorAll(".dropdown-item");
   const icons = document.getElementById("search-icon");
   const searchBox = document.querySelector("input");
-  let url;
 
-  const google = {
-    name: "Google",
-    url: "https://www.google.com/search?q=",
-    icon: "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-512.png",
-  };
+  const searchEngines = [
+    {
+      name: "Google",
+      url: "https://www.google.com/search?q=",
+      icon: "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-512.png",
+    },
+    {
+      name: "Duckduckgo",
+      url: "https://duckduckgo.com/?va=j&t=hc&q=",
+      icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-512.png",
+    },
+    {
+      name: "Brave",
+      url: "https://search.brave.com/search?q=",
+      icon: "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/brave-icon.png",
+    },
+  ];
 
-  const duckduckgo = {
-    name: "Duckduckgo",
-    url: "https://duckduckgo.com/?va=j&t=hc&q=",
-    icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-512.png",
-  };
+  function setEngine(engine) {
+    url = engine.url;
+    icons.setAttribute("src", engine.icon);
+    searchBox.setAttribute("placeholder", `Search with ${engine.name}`);
+    searchBox.focus();
+  }
 
-  const brave = {
-    name: "Brave",
-    url: "https://search.brave.com/search?q=",
-    icon: "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/brave-icon.png",
-  };
-
-  engines[0].addEventListener("click", () => {
-    url = google.url;
-    icons.setAttribute("src", google.icon);
-    searchBox.setAttribute("placeholder", `Search with ${google.name}`);
-    searchBox.focus(); 
-  });
-
-  engines[1].addEventListener("click", () => {
-    url = duckduckgo.url;
-    icons.setAttribute("src", duckduckgo.icon);
-    searchBox.setAttribute("placeholder", `Search with ${duckduckgo.name}`);
-    searchBox.focus(); 
-  });
-
-  engines[2].addEventListener("click", () => {
-    url = brave.url;
-    icons.setAttribute("src", brave.icon);
-    searchBox.setAttribute("placeholder", `Search with ${brave.name}`);
-    searchBox.focus(); 
+  engines.forEach((engine, index) => {
+    engine.addEventListener("click", () => {
+      setEngine(searchEngines[index]);
+    });
   });
 
   // Search engine function
@@ -131,6 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (browser.indexOf("Firefox") != -1) {
     link.setAttribute("href", "https://addons.mozilla.org/en-US/firefox/");
   } else if (browser.indexOf("Edge") != -1) {
-    link.setAttribute("href", "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home");
+    link.setAttribute(
+      "href",
+      "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"
+    );
   }
 });
