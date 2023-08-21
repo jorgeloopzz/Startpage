@@ -2,9 +2,10 @@
     🏡Startpage
 </h1>
 
+- Clone the repository or [download the zip](https://github.com/jorgeloopzz/Startpage/archive/refs/heads/main.zip), extract it, open `index.html` and copy the link in URL bar.
 
-* Clone the repository or [download the zip](https://github.com/jorgeloopzz/Startpage/archive/refs/heads/main.zip), extract it, open `index.html` and copy the link in URL bar.
-___
+---
+
 > In Firefox based browsers go to `about:preferences#home`, select "Custom URLs" and paste it.
 >
 > In Brave go to `brave://settings/getStarted`, select third option and add the link.
