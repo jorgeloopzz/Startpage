@@ -12,4 +12,4 @@
 >
 > - For Chrome users check [this](https://support.google.com/chrome/answer/95314?hl=en&co=GENIE.Platform%3DDesktop).
 
-![p](https://github.com/jorgeloopzz/Startpage/assets/80071604/a317087e-c2c8-4830-9cee-d14df3644f2f)
+<img src="https://raw.githubusercontent.com/jorgeloopzz/Startpage/main/assets/preview.png">
