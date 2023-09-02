@@ -13,3 +13,6 @@
 > - For Chrome users check [this](https://support.google.com/chrome/answer/95314?hl=en&co=GENIE.Platform%3DDesktop).
 
 <img src="https://raw.githubusercontent.com/jorgeloopzz/Startpage/main/assets/preview.png">
+
+<p align="center"><img src="https://img.shields.io/github/license/jorgeloopzz/Startpage?style=flat-square&logo=github&label=License&labelColor=%23181717&color=a6d189"/></p>
+
