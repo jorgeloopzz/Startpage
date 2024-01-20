@@ -6,11 +6,11 @@
 
 ---
 
-> - In Firefox based browsers go to `about:preferences#home`, select "Custom URLs" and paste it.
->
-> - In Brave go to `brave://settings/getStarted`, select third option and add the link.
->
-> - For Chrome users check [this](https://support.google.com/chrome/answer/95314?hl=en&co=GENIE.Platform%3DDesktop).
+- In Firefox based browsers go to `about:preferences#home`, select "Custom URLs" and paste it.
+
+- In Brave go to `brave://settings/getStarted`, select third option and add the link.
+
+- For Chrome users check [this](https://support.google.com/chrome/answer/95314?hl=en&co=GENIE.Platform%3DDesktop).
 
 <img src="https://raw.githubusercontent.com/jorgeloopzz/Startpage/main/assets/preview.png">
 
