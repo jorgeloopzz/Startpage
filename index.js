@@ -57,58 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } ${date.getFullYear()}
     `;
 
-  // Choose search engine
-  const engines = document.querySelectorAll(".dropdown-item");
-  const icons = document.getElementById("search-icon");
-  const searchBox = document.querySelector("input");
-
-  const searchEngines = [
-    {
-      name: "Google",
-      url: "https://www.google.com/search?q=",
-      icon: "https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-512.png",
-    },
-    {
-      name: "Duckduckgo",
-      url: "https://duckduckgo.com/?va=j&t=hc&q=",
-      icon: "https://cdn3.iconfinder.com/data/icons/social-media-special/256/duckduckgo-512.png",
-    },
-    {
-      name: "Brave",
-      url: "https://search.brave.com/search?q=",
-      icon: "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/brave-icon.png",
-    },
-  ];
-
-  function setEngine(engine) {
-    url = engine.url;
-    icons.setAttribute("src", engine.icon);
-    searchBox.setAttribute("placeholder", `Search with ${engine.name}`);
-    searchBox.focus();
-  }
-
-  engines.forEach((engine, index) => {
-    engine.addEventListener("click", () => {
-      setEngine(searchEngines[index]);
-    });
-  });
-
-  // Search engine function
-  searchBox.addEventListener("keydown", (e) => {
-    if (e.code == "Enter" && searchBox.value != "") {
-      window.open(`${url}${searchBox.value}`);
-    } else {
-      return 0;
-    }
-  });
-
-  // Remove search
-  const removeSearch = document.getElementById("removeBtn");
-  removeSearch.onclick = () => {
-    searchBox.value = "";
-    searchBox.focus();
-  };
-
   // Extensions stores depending on the browsers
   const link = document.getElementById("extensions-link");
   const browser = navigator.userAgent; // Detect the user's browser
